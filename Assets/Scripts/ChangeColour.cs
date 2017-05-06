@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class ChangeColour : MonoBehaviour {
 
-	public Color newColour;
+	public MeshRenderer meshRenderer;
 
 	// Use this for initialization
 	void Start () {
 		
+		meshRenderer = this.GetComponent<MeshRenderer> ();
 	}
 
-	public void ChangeMyColour()
+	public void ChangeMyMaterial(Material newMaterial)
 	{
-		this.GetComponent<MeshRenderer> ().material.color = newColour;
+		meshRenderer.material = newMaterial;
 	}
 			
 }
