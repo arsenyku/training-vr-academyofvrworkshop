@@ -551,6 +551,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1789814111}
+          m_MethodName: ChangeMyColour
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -698,8 +709,9 @@ GameObject:
   - component: {fileID: 1789814109}
   - component: {fileID: 1789814108}
   - component: {fileID: 1789814107}
+  - component: {fileID: 1789814111}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,6 +781,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -2.523, y: -1.1680001, z: 3.071}
+--- !u!114 &1789814111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789814106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19dbe8ed10ab94989bf86d0bc5863a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newColour: {r: 0.35294116, g: 0.0233564, b: 0.0233564, a: 0}
 --- !u!1 &1895874281
 GameObject:
   m_ObjectHideFlags: 0
