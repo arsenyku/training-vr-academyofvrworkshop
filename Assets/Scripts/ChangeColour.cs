@@ -9,8 +9,6 @@ public class ChangeColour : MonoBehaviour {
 
 	public AudioClip clip1;
 	public AudioClip clip2;
-	private bool switcher = false;
-
 
 	// Use this for initialization
 	void Start () {
@@ -26,8 +24,8 @@ public class ChangeColour : MonoBehaviour {
 
 	public void PlayAudioClip()
 	{
-		noiseMaker.clip = switcher ? clip2 : clip1;
-		switcher = !switcher;
+		Debug.Log ("OH NOES!", noiseMaker.clip);
+		noiseMaker.clip = (noiseMaker.clip == clip1) ? clip2 : clip1;
 		noiseMaker.Play ();
 	}
 }

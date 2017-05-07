@@ -18,7 +18,9 @@ public class CubeMotion : MonoBehaviour {
 //		this.transform.position = this.transform.position + (this.transform.right * Time.deltaTime * speed);	
 //		this.transform.position = this.transform.position + (this.transform.forward * Time.deltaTime * speed);	
 
-		Vector3 x = new Vector3 (0, 2, 0);
-		this.transform.Rotate (x * speed);
+		this.transform.Rotate (new Vector3 (0, 2, 0) * speed);
+
+		float y = this.transform.position.y;
+//		this.transform.localScale += 0.1f * speed * (new Vector3 (Mathf.Sin (y), Mathf.Sin (y), Mathf.Sin (y)));
 	}
 }
